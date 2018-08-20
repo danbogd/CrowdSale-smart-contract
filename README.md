@@ -1,5 +1,5 @@
 # CrowdSale smart-contract
-Crowdsale contract with vesting, goal and cap, pausable, bonus for investors, reference.
+Crowdsale contract with vesting, goal and cap, bonus for investors, reference.
 
 Rinkeby TestNet
 
