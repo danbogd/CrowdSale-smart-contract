@@ -607,43 +607,43 @@ contract Crowdsale is Ownable{
     uint bonusTokens = 0;
     
     //Bonus in first hour
-        if(now < openingTime + 1 hours && weiAmount <= 1 ether) {
+        if(now < openingTime + 1 days && weiAmount <= 1 ether) {
           bonusTokens = tokens.mul(20).div(100);
           
-        } else if(now <= openingTime + 1 hours && weiAmount > 1 ether && weiAmount < 2){ 
+        } else if(now <= openingTime + 1 days && weiAmount > 1 ether && weiAmount < 2){ 
           bonusTokens =  tokens.mul(225).div(1000);
           
-        } else if(now <= openingTime + 1 hours && weiAmount >= 2 ether)  {
+        } else if(now <= openingTime + 1 days && weiAmount >= 2 ether)  {
           bonusTokens =  tokens.mul(25).div(100);
           
         
            
     // Bonus at first day      
-        } else if(now > openingTime + 1 hours && now <= openingTime + 24 hours && weiAmount <= 1 ether)  {
+        } else if(now > openingTime + 1 days && now <= openingTime + 24 days && weiAmount <= 1 ether)  {
           bonusTokens =  tokens.mul(15).div(100); 
           
-        } else if( now > openingTime + 1 hours && now <= openingTime + 24 hours && weiAmount > 1 ether && weiAmount < 2 ether)  {
+        } else if( now > openingTime + 1 days && now <= openingTime + 24 days && weiAmount > 1 ether && weiAmount < 2 ether)  {
           bonusTokens =  tokens.mul(175).div(1000);
           
-        } else if(now > openingTime + 1 hours && now <= openingTime + 24 hours && weiAmount >= 2 ether)  {
+        } else if(now > openingTime + 1 days && now <= openingTime + 24 days && weiAmount >= 2 ether)  {
           bonusTokens =  tokens.mul(20).div(100); 
           
     // Bonus at second day      
-        } else if(  now > openingTime + 24 hours && now <= openingTime + 48 hours && weiAmount <= 1 ether)  {
+        } else if(  now > openingTime + 24 days && now <= openingTime + 48 days && weiAmount <= 1 ether)  {
           bonusTokens =  tokens.mul(5).div(100);
           
-        } else if(now > openingTime + 24 hours && now <= openingTime + 48 hours && weiAmount > 1 ether && weiAmount < 2 ether) {
+        } else if(now > openingTime + 24 days && now <= openingTime + 48 days && weiAmount > 1 ether && weiAmount < 2 ether) {
           bonusTokens =  tokens.mul(75).div(1000);
           
-        } else if(now > openingTime + 24 hours && now <= openingTime + 48 hours &&  weiAmount >= 2 ether)  {
+        } else if(now > openingTime + 24 days && now <= openingTime + 48 days &&  weiAmount >= 2 ether)  {
           bonusTokens =  tokens.mul(10).div(100); 
           
     // Bonus at third day  
-        } else if(now > openingTime + 48 hours && now <= openingTime + 72 hours)  {
+        } else if(now > openingTime + 48 days && now <= openingTime + 72 days)  {
           bonusTokens =  tokens.mul(1).div(100);  
          
     // Bonus at forth day    
-        } else if(now > openingTime + 72 hours && now <= openingTime + 96 hours)  {
+        } else if(now > openingTime + 72 days && now <= openingTime + 96 days)  {
           bonusTokens =  0;
             
     }
@@ -1076,6 +1076,4 @@ contract MyCrowdsale is CappedCrowdsale, RefundableCrowdsale{
   
 }
  
-  
-
   
