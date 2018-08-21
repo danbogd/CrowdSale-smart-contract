@@ -30,4 +30,4 @@ For => 2 Ether
 
 referral program 5%
 
-You can watch any function of this contracts by https://wallet.ethereum.org/ or another (ABI files in Directory /Contracts).
+You can watch any function of this contracts by https://wallet.ethereum.org/ or another (ABI files in Directory /contracts).
