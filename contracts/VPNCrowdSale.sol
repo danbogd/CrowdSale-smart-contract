@@ -692,7 +692,7 @@ contract Crowdsale is Ownable{
   {
     require(_beneficiary != address(0));
     require(_weiAmount != 0);
-    require(_weiAmount >= 100000000000000000 wei);
+    require(_weiAmount >= 1000000000000000000 wei);
     require(now >= openingTime && now <= closingTime);
     
     //super._preValidatePurchase(_beneficiary, _weiAmount)???;
